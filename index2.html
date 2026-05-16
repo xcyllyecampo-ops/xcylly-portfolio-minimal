@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xcylly Campo</title>
+  <link rel="stylesheet" href="style2.css" />
+  <!-- Cormorant Garamond (display serif) + Outfit (clean body) + DM Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500&family=DM+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Grain texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">XC</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+
+      <!-- Left: identity -->
+      <div class="hero-identity">
+        <p class="hero-sub fade-up" style="--d:.1s">Computer Science Student</p>
+        <h1 class="hero-name fade-up" style="--d:.25s">
+          Xcylly<br /><em>Campo</em>
+        </h1>
+        <p class="hero-desc fade-up" style="--d:.4s">
+          Aspiring full-stack developer &amp; UI/UX enthusiast crafting clean,
+          purposeful digital experiences.
+        </p>
+        <div class="hero-cta fade-up" style="--d:.55s">
+          <a href="#projects" class="btn-line">View Work</a>
+          <a href="#contact" class="btn-text">Get in touch →</a>
+        </div>
+      </div>
+
+      <!-- Right: portrait frame -->
+      <div class="hero-portrait fade-up" style="--d:.35s">
+        <div class="portrait-box">
+          <div class="portrait-placeholder">
+            <!-- Avatar initial -->
+            <span>XC</span>
+          </div>
+          <!-- Floating label -->
+          <div class="portrait-label">
+            <span class="mono">Available for opportunities</span>
+            <span class="dot-live"></span>
+          </div>
+        </div>
+        <!-- Decorative rule -->
+        <div class="portrait-rule"></div>
+      </div>
+
+    </div>
+
+    <!-- Marquee strip -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span>Web Development</span><span aria-hidden="true">·</span>
+        <span>UI/UX Design</span><span aria-hidden="true">·</span>
+        <span>Software Engineering</span><span aria-hidden="true">·</span>
+        <span>Problem Solving</span><span aria-hidden="true">·</span>
+        <span>PSITS President</span><span aria-hidden="true">·</span>
+        <span>Web Development</span><span aria-hidden="true">·</span>
+        <span>UI/UX Design</span><span aria-hidden="true">·</span>
+        <span>Software Engineering</span><span aria-hidden="true">·</span>
+        <span>Problem Solving</span><span aria-hidden="true">·</span>
+        <span>PSITS President</span><span aria-hidden="true">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-tag mono reveal">01 — About</div>
+
+      <div class="about-grid">
+        <div class="about-heading reveal">
+          <h2>Building things<br />that <em>matter</em></h2>
+        </div>
+        <div class="about-body-col">
+          <p class="body-lg reveal">
+            I'm a Computer Science student driven by a deep passion for building software
+            that is both functional and beautiful. I sit at the intersection of engineering
+            and design — where logic meets aesthetic intention.
+          </p>
+          <p class="body-sm reveal">
+            My focus spans web development, software engineering, and UI/UX design. I believe
+            that great technology solves real human problems elegantly. Beyond the screen, I
+            serve as <strong>President of the Philippine Society of Information Technology
+            Students (PSITS)</strong>, leading events, mentoring peers, and connecting students
+            to the broader tech industry.
+          </p>
+          <div class="about-pillars reveal">
+            <div class="pillar">
+              <span class="pillar-num mono">01</span>
+              <span class="pillar-name">Web Development</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-num mono">02</span>
+              <span class="pillar-name">UI/UX Design</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-num mono">03</span>
+              <span class="pillar-name">Leadership</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-num mono">04</span>
+              <span class="pillar-name">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-tag mono reveal">02 — Skills</div>
+
+      <div class="skills-layout">
+
+        <!-- Languages -->
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Languages</h3>
+          <ul class="skill-list">
+            <li class="skill-row">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-track"><span class="skill-bar" data-w="90"></span></span>
+              <span class="skill-pct mono">90</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-track"><span class="skill-bar" data-w="85"></span></span>
+              <span class="skill-pct mono">85</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-track"><span class="skill-bar" data-w="78"></span></span>
+              <span class="skill-pct mono">78</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-name">Python</span>
+              <span class="skill-track"><span class="skill-bar" data-w="72"></span></span>
+              <span class="skill-pct mono">72</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Web & Tech -->
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Web &amp; Tech</h3>
+          <ul class="tag-list">
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Database Management</li>
+            <li>Problem Solving</li>
+            <li>Software Development</li>
+          </ul>
+        </div>
+
+        <!-- Design Tools -->
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Design Tools</h3>
+          <ul class="tag-list">
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Lightroom</li>
+            <li>Adobe Premiere Pro</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-tag mono reveal">03 — Projects</div>
+      <h2 class="section-h2 reveal">Selected <em>Work</em></h2>
+
+      <div class="project-list">
+
+        <!-- Project 1 -->
+        <article class="project-item reveal">
+          <div class="project-meta">
+            <span class="project-index mono">01</span>
+            <div class="project-tech-row">
+              <span>Python</span><span>MySQL</span><span>Tkinter</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Car Parking Management System</h3>
+            <p class="project-desc">
+              A management system for tracking parking slots, vehicle entry and exit,
+              and automated billing — designed for clarity and operational efficiency.
+            </p>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-arrow">GitHub ↗</a>
+            <a href="#" class="link-arrow">Live ↗</a>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Project 2 -->
+        <article class="project-item reveal">
+          <div class="project-meta">
+            <span class="project-index mono">02</span>
+            <div class="project-tech-row">
+              <span>JavaScript</span><span>Firebase</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Greeny <em class="featured-tag">Featured</em></h3>
+            <p class="project-desc">
+              A mobile social media application built around sustainability. Users can post,
+              authenticate, and engage with an eco-conscious community through a clean,
+              expressive interface.
+            </p>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-arrow">GitHub ↗</a>
+            <a href="#" class="link-arrow">Live ↗</a>
+          </div>
+        </article>
+
+        <div class="project-divider"></div>
+
+        <!-- Project 3 -->
+        <article class="project-item reveal">
+          <div class="project-meta">
+            <span class="project-index mono">03</span>
+            <div class="project-tech-row">
+              <span>Python</span><span>SQLite</span><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">MediTrack</h3>
+            <p class="project-desc">
+              A personal health app for tracking medications, scheduling doses, and
+              delivering timely reminders — helping users stay consistent with their
+              wellness routines.
+            </p>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-arrow">GitHub ↗</a>
+            <a href="#" class="link-arrow">Live ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-tag mono reveal">04 — Experience</div>
+      <h2 class="section-h2 reveal">Leadership &amp; <em>Journey</em></h2>
+
+      <div class="exp-grid">
+
+        <div class="exp-item reveal">
+          <div class="exp-period mono">2024 — Present</div>
+          <div class="exp-content">
+            <div class="exp-org">Philippine Society of Information Technology Students</div>
+            <h3 class="exp-role">President</h3>
+            <ul class="exp-duties">
+              <li>Lead planning and execution of tech events, seminars, and hackathons</li>
+              <li>Coordinate cross-functional teams toward shared organizational goals</li>
+              <li>Build community initiatives connecting students to industry professionals</li>
+              <li>Represent the organization in inter-school and institutional settings</li>
+              <li>Foster a culture of learning, collaboration, and innovation</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Leadership</span>
+              <span>Event Management</span>
+              <span>Team Building</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-divider reveal"></div>
+
+        <div class="exp-item reveal">
+          <div class="exp-period mono">2022 — Present</div>
+          <div class="exp-content">
+            <div class="exp-org">University</div>
+            <h3 class="exp-role">BS Computer Science</h3>
+            <ul class="exp-duties">
+              <li>Studying algorithms, data structures, software engineering, and systems</li>
+              <li>Building real-world projects that apply theory to practical problems</li>
+              <li>Self-directed learning across web technologies, design, and emerging tech</li>
+            </ul>
+            <div class="exp-tags">
+              <span>Computer Science</span>
+              <span>Web Dev</span>
+              <span>Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-tag mono reveal">05 — Contact</div>
+
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="contact-heading reveal">Let's<br /><em>work together.</em></h2>
+          <p class="contact-sub reveal">
+            Open to opportunities, collaborations, and good conversations.
+          </p>
+          <div class="contact-socials reveal">
+            <a href="mailto:xcylly@email.com" class="social-row">
+              <span class="mono">Email</span>
+              <span class="link-arrow-sm">xcylly@email.com ↗</span>
+            </a>
+            <a href="#" class="social-row">
+              <span class="mono">GitHub</span>
+              <span class="link-arrow-sm">github.com/xcylly ↗</span>
+            </a>
+            <a href="#" class="social-row">
+              <span class="mono">LinkedIn</span>
+              <span class="link-arrow-sm">linkedin.com/in/xcylly ↗</span>
+            </a>
+            <a href="#" class="social-row">
+              <span class="mono">Facebook</span>
+              <span class="link-arrow-sm">facebook.com/xcylly ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form">
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input type="text" id="f-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="field">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn-line btn-submit">Send message</button>
+          <div id="form-status" class="form-status mono"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono footer-copy">© 2026 Xcylly Campo. All Rights Reserved.</span>
+      <a href="#hero" class="footer-top mono">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
